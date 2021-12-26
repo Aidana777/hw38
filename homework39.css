@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+#button{
+  margin:1vw auto 2vw auto;
+  display:block;
+  width:90vw;
+  height:10vw;
+  color:white;
+  text-decoration:underline;
+  font-size:4vw;
+  background-color:#222222;
+  
+}
+#block{
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 5px;
+}
