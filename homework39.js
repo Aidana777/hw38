@@ -1,5 +1,6 @@
-function button(){
-  document.getElementById("div")
+const btn=document.querySelector('button');
+btn.addEventListener('click',(Element)=>{
+
 }
 const cont=document.querySelectorAll('div');
 console.log(cont);
