@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lesson39</title>
+    <link rel="stylesheet" href="/homework39.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Lesson39</title>
-  <link rel="stylesheet" href="/homework39.css" />
-</head>
-
-<body>
-    <div id="block"></div>
-    <div id="block"></div>
-    <div id="block"></div>
-    <div id="block"></div>
-    <div id="block"></div>
-      <div id="block"></div>
-      <input onclick="button" type="button" id="button" value="Нажмите">
-  <script src="/homework39.js"></script>
-</body>
-
+  <body>
+    <section class="sector">
+      <div class="block-1"></div>
+      <div class="block-2"></div>
+      <div class="block-3"></div>
+      <div class="block-4"></div>
+      <div class="block-5"></div>
+    </section>
+    <button id="btn">Change color</button>
+    <script>
+      const btn = document.querySelector("#btn");
+      const rc = () => Math.random() * (255 - 0) + 0;
+      const blocks = document.querySelectorAll('[class^="block"]');
+      btn.addEventListener("click", () => {
+        blocks.forEach(a => {
+          a.style.backgroundColor =  `rgba(${rc()}, ${rc()},  ${rc()})`
+        })
+      })
+    </script>
+  </body>
 </html>
